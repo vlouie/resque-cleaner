@@ -173,7 +173,8 @@ module ResqueCleaner
           block = filter_block
 
           content_type :json
-          JSON.pretty_generate(cleaner.select(&block))
+          # JSON.pretty_generate(cleaner.select(&block))
+          cleaner.select(&block).to_json
         end
 
         post "/cleaner_stale" do
