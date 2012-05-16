@@ -1,3 +1,5 @@
+Playing with Buildhive.
+
 ## 0.2.9 (2012-05-10)
 
 * Make limiter configurable on resque-web.
